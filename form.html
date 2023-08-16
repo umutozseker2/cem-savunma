@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/form.css">
+  <title>Servis Talep Formu</title>
+</head>
+<body>
+  <div class="container">
+    <h1 style="color: red;">Servis Talep Formu</h1>
+    <form class="form">
+      
+      <input type="text" id="adsoyad" name="adsoyad" placeholder="Adınız ve Soyadınız:" required>
+      
+      <input type="email" id="email" name="email" placeholder="E-posta Adresiniz:" required>
+      
+      <input type="tel" id="telefon" name="telefon" placeholder="Telefon Numaranız" required>
+      
+      <label for="konu" style="color: aliceblue;">Hizmet Talep Edilen Konu:</label>
+      <select  style="width: 104%;" class="talep" id="konu" name="konu" required>
+        <option value="teknik-destek">Teknik Destek</option>
+        <option value="urun-onarimi">Ürün Onarımı</option>
+        <option value="danismanlik">Danışmanlık Hizmeti</option>
+        <option value="diger">Diğer</option>
+      </select>
+      
+      <label for="detay" style="color: aliceblue;">Talep Detayları:</label>
+      <textarea id="detay" name="detay" rows="4" required></textarea>
+      
+      <div class="öncelik">
+        <label for="oncelik" style="color: aliceblue;">Öncelik Durumu:</label>
+        <input type="radio" id="oncelik-yuksek" name="oncelik" value="yuksek" required style="color: aliceblue;">
+        <label for="oncelik-yuksek">Yüksek</label>
+        <input type="radio" id="oncelik-orta" name="oncelik" value="orta" required style="color: aliceblue;">
+        <label for="oncelik-orta">Orta</label>
+        <input type="radio" id="oncelik-dusuk" name="oncelik" value="dusuk" required style="color: aliceblue;">
+        <label for="oncelik-dusuk">Düşük</label>
+      </div> 
+
+
+      <label for="ekbilgiler" style="color: aliceblue;">Ek Bilgiler:</label>
+      <textarea id="ekbilgiler" name="ekbilgiler" rows="4"></textarea>
+      
+      <button style="width: 104%;" type="submit">Talep Gönder</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .destekci {
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .destekci img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .destekci p {
+    margin-top: 10px;
+  }
+    
+  @media (min-width: 768px) {
+    .destekci {
+      grid-template-columns: 1fr 2fr;
+      text-align: left;
+    }
+  
+    .destekci img {
+      max-width: 100px;
+    }
+  }
+  
